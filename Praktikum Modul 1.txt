@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+	char nama[20];
+	char kelas;
+	char alamat[20];
+	char nim[10];
+	int  tanggal_lahir[100];
+	char hp[15];
+	int  umur;
+	
+	printf("Nama : ");
+	gets(nama);
+	printf("NIM : ");
+	scanf("%s", &nim);
+	printf("Kelas : ");
+	fflush(stdin);
+	scanf("%c", &kelas);
+	printf("Alamat : ");
+	fflush(stdin);
+	gets(alamat);
+	printf("No HP : ");
+	scanf("%s", &hp);
+	printf("Tanggal Lahir : ");
+	scanf("%s", &tanggal_lahir); 
+	
+	printf("\n\n*******************Terimakasih Telah Mendaftar*************************\n");
+	printf("Nama : %s\n", nama);
+	printf("NIM : %s\n", nim);
+	printf("Kelas : %c\n", kelas);
+	printf("Alamat : %s\n", alamat);
+	printf("Nomor HP : %s\n", hp);
+	printf("Tanggal lahir : %s\n", tanggal_lahir);
+}
