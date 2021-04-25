@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	
+	int a = 0;
+	int b = 1;
+	int c = 0;
+	int i;
+	int jumlah;
+    
+    printf("==========Deret Bilangan Fibonacci========== \n\n");
+	printf("Masukkan Jumlah Bilangan Fibonacci : ");
+    scanf("%d", &jumlah);
+    puts(" ");
+    printf("Deret Bilangan Fibonacci Adalah : ");
+    	for(i = 1; i <= jumlah; i++){
+        printf("%d ",c);
+        c = a + b;
+        b = a;
+        a = c;
+    }
+    printf("\n\n");
+    printf("***************Terima Kasih!***************");
+	return 0;
+}
